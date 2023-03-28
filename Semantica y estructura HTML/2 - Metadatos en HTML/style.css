@@ -1,14 +1,17 @@
+/* Establece el color de fondo y el tamaño de fuente para todo el documento HTML */
 html {
   background-color: green;
   font-size: 20px;
 }
 
+/* Establece un fondo rojo, un relleno de 10 píxeles y un borde negro de 1 píxel con espaciado en una lista desordenada */
 ul {
   background: red;
   padding: 10px;
   border: 1px solid black;
 }
 
+/* Establece un margen izquierdo de 20 píxeles en cada elemento de una lista desordenada */
 li {
   margin-left: 20px;
 }
