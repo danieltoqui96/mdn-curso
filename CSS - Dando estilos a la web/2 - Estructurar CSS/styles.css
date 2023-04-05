@@ -1,0 +1,105 @@
+p {
+  color: red;
+}
+
+/* Selecciona todos los elementos "h1" */
+h1 {
+  /* Propiedades CSS aplicadas a los elementos "h1" */
+  color: blue;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+/* Selecciona todos los enlaces que aún no han sido visitados */
+a:link {
+  /* Propiedades CSS aplicadas a los enlaces no visitados */
+}
+
+/* Selecciona todos los elementos que tienen la clase "manythings" */
+.manythings {
+  /* Propiedades CSS aplicadas a todos los elementos con la clase "manythings" */
+}
+
+/* Selecciona el elemento con el ID "onething" */
+#onething {
+  /* Propiedades CSS aplicadas al elemento con el ID "onething" */
+}
+
+/* Selecciona todos los elementos */
+* {
+  /* Propiedades CSS aplicadas a todos los elementos */
+}
+
+/* Selecciona todos los elementos "p" que están dentro de un elemento con la clase "box" */
+.box p {
+  /* Propiedades CSS aplicadas a todos los elementos "p" dentro de un elemento con la clase "box" */
+}
+
+/* Selecciona el primer elemento "p" que está dentro de un elemento con la clase "box" */
+.box p:first-child {
+  /* Propiedades CSS aplicadas al primer elemento "p" dentro de un elemento con la clase "box" */
+}
+
+/* Selecciona todos los elementos "h1", todos los elementos "h2" y todos los elementos con la clase "intro" */
+h1,
+h2,
+.intro {
+  /* Propiedades CSS aplicadas a todos los elementos "h1", "h2" y con la clase "intro" */
+}
+
+/* Establece un borde de 5px sólido negro para el elemento con la clase "outer" */
+.outer {
+  border: 5px solid black;
+}
+
+/* Establece un relleno de 10px, un ancho de "90% - 30px" (es decir, 90% del ancho del elemento menos 30px), un fondo morado y un color de texto blanco para el elemento con la clase "box" */
+.box {
+  padding: 10px;
+  width: calc(
+    90% - 30px
+  ); /* Esta es una función "calc" que calcula el ancho del elemento */
+  background-color: rebeccapurple;
+  color: white;
+}
+
+/* Establece el color de fondo del cuerpo del documento en rosa */
+body {
+  background-color: pink;
+}
+
+/* Define un conjunto de reglas que se aplicarán solo cuando el ancho mínimo de la pantalla sea de 30em (es decir, 30 veces el tamaño de la fuente actual) */
+@media (min-width: 30em) {
+  /* Establece el color de fondo del cuerpo del documento en azul, solo cuando el ancho mínimo de la pantalla sea de 30em o más */
+  body {
+    background-color: blue;
+  }
+}
+
+/* 
+  En propiedades abreviadas con 4 valores, como margin y padding (relleno), los valores se aplican
+  según el orden: arriba, derecha, abajo e izquierda (en sentido horario desde la parte superior). También hay otros
+  tipos de abreviaturas, como las propiedades abreviadas con 2 valores que establecen el relleno/margen,
+  arriba/abajo, y luego izquierda/derecha 
+
+  padding: 10px 15px 15px 5px;
+
+  Hace lo mismo que todas estas juntas:
+
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+
+  Mientras que esta línea:
+
+  background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+
+  Hace lo mismo que todas estas juntas:
+
+  background-color: red;
+  background-image: url(bg-graphic.png);
+  background-position: 10px 10px;
+  background-repeat: repeat-x;
+  background-scroll: fixed;
+   
+*/
