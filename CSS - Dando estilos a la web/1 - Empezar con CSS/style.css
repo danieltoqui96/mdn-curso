@@ -1,0 +1,59 @@
+/* Establece el color de los encabezados de nivel 1 como rojo */
+h1 {
+  color: red;
+}
+
+/* Establece el color de los párrafos y elementos de lista como verde */
+p,
+li {
+  color: green;
+}
+
+/* Elimina el estilo de viñeta predeterminado para los elementos de lista */
+li {
+  list-style-type: none;
+}
+/* Establece el color del texto y el peso de fuente en negrita para cualquier elemento con la clase "special" */
+/* .special {
+  color: orange;
+  font-weight: bold;
+} */
+
+/* Establece el color del texto y el peso de fuente en negrita para cualquier elemento de lista o "span" con la clase "special" */
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Establece el color del texto en cursiva dentro de los elementos de lista como morado oscuro */
+li em {
+  color: rebeccapurple;
+}
+
+/* Establece el tamaño de fuente al 200% para cualquier elemento "p" que siga inmediatamente a un elemento "h1" */
+h1 + p {
+  font-size: 200%;
+}
+
+/* Establece el color del texto de los enlaces no visitados como rosa */
+a:link {
+  color: pink;
+}
+
+/* Establece el color del texto de los enlaces visitados como verde */
+a:visited {
+  color: green;
+}
+
+/* Quita el subrayado del texto de los enlaces al pasar el cursor sobre ellos */
+a:hover {
+  text-decoration: none;
+}
+
+/* Establece el color de fondo en negro, el color del texto en amarillo y agrega un relleno de 5 píxeles para cualquier elemento con la clase "special" que esté dentro de un elemento "p" que sigue inmediatamente a un elemento "h1" dentro del cuerpo */
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
