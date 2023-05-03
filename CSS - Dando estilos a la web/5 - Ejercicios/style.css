@@ -1,0 +1,79 @@
+/* estilos generales */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Helvetica neue", Arial, "sans serif";
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* Especificidad 
+.card article img (0,0,1,3)
+.card footer (0,0,1,2)
+.card header (0,0,1,2)
+.card (0,0,1,1)
+*/
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: tomato;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+.card header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+/* estilos específicos para la configuración del contenedor de la tarjeta */
+.card h2,
+.card p {
+  margin: 0;
+}
+/* estilos específicos para el encabezado y el pie de página */
+.card header,
+.card footer {
+  height: 3em; /* 50px / 10px = 5em */
+  padding: 1em; /* 10px / 10px = 1em */
+}
+.card header h2 {
+  font-size: 2em;
+  line-height: 1.5em; /* altura de línea = altura de contenido */
+}
+.card footer p {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+/* estilos específicos para el contenido principal de la tarjeta */
+.card article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.card article p {
+  padding: 0.75em 1em;
+  line-height: 1.5em;
+  color: #ffffff; /* cambiar el color según sea necesario */
+}
