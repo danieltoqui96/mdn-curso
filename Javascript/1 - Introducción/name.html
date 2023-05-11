@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript label example</title>
+    <style>
+      /* Estilos para el elemento p */
+      p {
+        font-family: "helvetica neue", helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid rgb(0 0 200 / 0.6);
+        background: rgb(0 0 200 / 0.6);
+        color: rgb(255 255 255 / 1);
+        box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
+        border-radius: 10px;
+        padding: 3px 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- El párrafo que se actualizará con un nuevo nombre -->
+    <p>Player 1: Chris</p>
+
+    <script>
+      // Selecciona el primer elemento p en la página
+      const para = document.querySelector("p");
+
+      // Agrega un escuchador de eventos al elemento p que espera un clic del usuario
+      para.addEventListener("click", updateName);
+
+      // Función que se llama cuando se produce un clic en el elemento p
+      function updateName() {
+        // Pide al usuario que ingrese un nuevo nombre utilizando la función prompt
+        const name = prompt("Enter a new name");
+        // Actualiza el contenido del elemento p con el nuevo nombre
+        para.textContent = `Player 1: ${name}`;
+      }
+    </script>
+  </body>
+</html>

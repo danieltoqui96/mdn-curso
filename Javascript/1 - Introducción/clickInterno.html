@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Apply JavaScript example</title>
+    <script>
+      // Sección de JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // Definición de la función createParagraph()
+        function createParagraph() {
+          // Crear un nuevo elemento <p>
+          let para = document.createElement("p");
+          // Agregar texto al párrafo
+          para.textContent = "You clicked the button!";
+          // Agregar el párrafo al final del cuerpo del documento
+          document.body.appendChild(para);
+        }
+
+        // Obtener una lista de todos los botones en la página
+        const buttons = document.querySelectorAll("button");
+
+        // Agregar un evento click a cada botón de la lista
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener("click", createParagraph);
+        }
+      });
+    </script>
+    <!-- <script src="script.js" defer></script> -->
+  </head>
+  <body>
+    <!-- Agregar un botón a la página -->
+    <button>Click me</button>
+  </body>
+</html>
